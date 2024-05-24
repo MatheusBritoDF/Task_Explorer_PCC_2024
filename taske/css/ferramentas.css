@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+font-family: 'Nunito';
+}
+
+.logo{
+    margin-top: 0;
+}
+
+.logo img{
+    margin-left: 50px;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+}
+
+.d-flex {
+    display:-ms-flexbox!important;display:flex!important
+}
+
+.d-flex img{
+    margin-left: 10px;
+    margin-top: 0;
+    margin-right: 810px;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+}
+
+.menu{
+    background-color: rgba(0, 0, 0, 0.776);
+    display: inline-flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 80px;
+    width: 100%;
+}
+
+.lista li{
+    margin: 0px 20px 0px auto;
+    justify-items: right;
+    display: inline-block;
+    padding: 30px;
+    transition: 1s;
+    
+}
+
+.lista li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+
+.lista li:hover {
+    opacity: 0.8;
+    background-image: linear-gradient(rgb(7, 255, 214), rgba(0, 0, 0, 0.71));
+    color: black;
+}
+
+#login{
+    margin-top:20px;
+    margin-bottom:20px ;
+    margin-right: 50px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
+    background-color:rgb(32, 160, 139)
+}
+
+#login a{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background: none;
+}
+
+#login:hover{
+    opacity: 0.5;
+    padding: 15px;
+}
+
+.main_content_right {
+    margin: 25px 30px;
+    /* margin-right: 700px; */
+    /* Lembrar: quebrar texto e colocar imagem do lado */
+}
+
+.main_content_left {
+    text-align: left;
+    margin-left: 800px;
+    margin-right: 25px;
+}
+
+.main_content_right .content_image {
+    width: 400px;
+    display: flex;
+    margin-right: 30px;
+    justify-items: right;
+}

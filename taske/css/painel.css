@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Nunito';
+}
+
+/*CABEÇALHO*/
+
+.menu {
+    background-color: #130f0d;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    width: 90px;
+}
+
+.main_dashboard_header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dashboard_templates {
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.dashboard_templates .dashboard_templates_image {
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.novo_projeto {
+    
+}
