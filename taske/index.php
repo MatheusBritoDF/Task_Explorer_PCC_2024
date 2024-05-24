@@ -17,9 +17,8 @@ session_start();
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style1.css" />
     <link rel="icon" href="img/task.png">
-    <title>Login</title>
-
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Login</title>
   </head>
 
 <body>
@@ -52,9 +51,15 @@ session_start();
       <input type="password" name="senha" placeholder="Senha" id="pass" required/>
     </div>
 
-    <div class="g-recaptcha" data-sitekey="6LfkEuEpAAAAAE5f_XD6IQpxNC0eyY82nlXZYG_J"></div>
+    <div class="g-recaptcha" data-sitekey="6LfkEuEpAAAAAE5f_XD6IQpxNC0eyY82nlXZYG_J"></div><!--Parte do recaptcha --> 
 
-    <a href="painel.php"></a><input type="submit" value="Login" class="btn solid"/></a>
+    <a href="painel.php"></a><input type="submit" value="Login" class="btn solid" onclick="return valida()"/></a>
+
+    <script src="recaptcha/script.js"></script>
+
+    <?php
+      include 'recaptcha/recaptcha.php';
+    ?>
 
     <div>
     <a href="recuperar.php" method="post" type="submit" class="#">esqueceu a senha?</a>
@@ -76,15 +81,6 @@ session_start();
       </a>
     </div>
   </form>
-
-  <script type="text/javascript">
-  function valida() {
-      if (grecaptcha.getResponse() == "") {
-          alert("Você precisa marcar a validação");
-          return false;
-      }
-  } 
-  </script>
 
   <?php
   if (isset($_POST['enviar'])) {
