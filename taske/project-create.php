@@ -18,15 +18,36 @@ include 'conexao.php';
     <h1>Criar Quadro</h1>
     <div class="container">
         <form action="project-save.php" method="post" enctype="multipart/form-data">
-            <input type="text" name="" placeholder="Insira um título" autofocus required>
+            <input type="hidden" name="" value="">
+
+            <h2>Título</h2>
+            <p>
+                <input type="text" name="titulo" placeholder="Insira um título" autofocus required>
+            </p>
             
-            <label for="">Visibilidade</label>
+            <h2>Visibilidade</h2>
                 <select name="" id="">Visibilidade
                     <option value="desktop">Área de Trabalho</option>
                     <option value="public">Público</option>
                     <option value="private">Privado</option>
                 </select>
 
+            <?php
+            $visibilidade = $_GET['visibilidade'] ?? '';
+
+            if($visibilidade === 'desktop'){
+                $tipovisibilidade = 'Área de Trabalho';
+            } elseif ($visibilidade === 'publico') {
+                $tipovisibilidade = 'Público';
+            } else {
+                $tipovisibilidade = 'Privado';
+                $visibilidade = 'privado';
+            }
+            ?>
+
+            <?php
+            // $sql = 'INSERT INTO'; guardar no banco de dados o link da imagem
+            ?>
             <div class="background_image">
                 <h2>Imagem de Fundo</h2>
                 <img src="https://images.unsplash.com/photo-1714383524948-ebc87c14c0f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NHx8fGVufDB8fHx8fA%3D%3D" alt="">
