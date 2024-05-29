@@ -64,7 +64,6 @@ form.sign-in-form {
   font-size: 2.2rem;
   color: #444;
   margin-bottom: 10px;
-  
 }
 
 .input-field {
@@ -103,7 +102,7 @@ form.sign-in-form {
   font-weight: 500;
 }
 
-.input-field img{
+.input-field img {
   width: 35px;
   margin-left: 175px;
   margin-top: 8px;
@@ -184,7 +183,7 @@ form.sign-in-form {
   width: 100%;
   transition: transform 1.1s ease-in-out;
   transition-delay: 0.4s;
-  filter:drop-shadow(10px 7px 10px black)
+  filter: drop-shadow(10px 7px 10px black);
 }
 
 .panel {
@@ -423,4 +422,9 @@ form.sign-in-form {
   left: 160px;
   position: absolute;
   width: 20px;
+}
+
+.rec {
+  color: #088508;
+  text-decoration: none;
 }
