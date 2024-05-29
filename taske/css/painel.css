@@ -98,11 +98,13 @@ h2 {
     margin-top: 30px;
 }
 
-.btn a {
+.btn button {
     font-size: 1.2em;
-    text-decoration: none;
     color: #fff;
     background-color: #0ba70b;
     padding: 10px;
     border-radius: 5px;
+    cursor: pointer;
+    border-color: #088508;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
