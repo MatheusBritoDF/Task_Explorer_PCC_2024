@@ -1,106 +1,114 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 html {
-font-family: 'Nunito';
+  font-family: "Poppins", "Nunito";
 }
 
-.logo{
-    margin-top: 0;
+.logo {
+  margin-top: 0;
 }
 
-.logo img{
-    margin-left: 50px;
-    width: 70px;
-    height: 70px;
-    padding: 0;
+.logo img {
+  margin-left: 50px;
+  width: 70px;
+  height: 70px;
+  padding: 0;
 }
 
 .d-flex {
-    display:-ms-flexbox!important;display:flex!important
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-.d-flex img{
-    margin-left: 10px;
-    margin-top: 0;
-    margin-right: 810px;
-    width: 70px;
-    height: 70px;
-    padding: 0;
+.d-flex img {
+  margin-left: 10px;
+  margin-top: 0;
+  margin-right: 810px;
+  width: 70px;
+  height: 70px;
+  padding: 0;
 }
 
-.menu{
-    background-color: rgba(0, 0, 0, 0.776);
-    display: inline-flex;
-    flex-direction: row;
-    justify-content:space-between;
-    height: 80px;
-    width: 100%;
+.menu {
+  background-color: rgba(0, 0, 0, 0.776);
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
 }
 
-.lista li{
-    margin: 0px 20px 0px auto;
-    justify-items: right;
-    display: inline-block;
-    padding: 30px;
-    transition: 1s;
-    
+#login {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 1s;
+  background-color: #0ba70b;
 }
 
-.lista li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    
+#login a {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  background: none;
+  padding: 0 20px;
+  text-decoration: none;
 }
 
-.lista li:hover {
-    opacity: 0.8;
-    background-image: linear-gradient(rgb(7, 255, 214), rgba(0, 0, 0, 0.71));
-    color: black;
+#login:hover {
+  opacity: 0.5;
+  padding: 15px;
 }
 
-#login{
-    margin-top:20px;
-    margin-bottom:20px ;
-    margin-right: 50px;
-    display: inline-block;
-    padding: 10px;
-    border-radius: 10px;
-    transition: 1s;
-    background-color:rgb(32, 160, 139)
-}
-
-#login a{
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    background: none;
-}
-
-#login:hover{
-    opacity: 0.5;
-    padding: 15px;
-}
-
-.main_content_right {
-    margin: 25px 30px;
-    /* margin-right: 700px; */
-    /* Lembrar: quebrar texto e colocar imagem do lado */
+.section {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .main_content_left {
-    text-align: left;
-    margin-left: 800px;
-    margin-right: 25px;
+  display: flex;
+
+  /* Lembrar: quebrar texto e colocar imagem do lado */
 }
 
-.main_content_right .content_image {
-    width: 400px;
-    display: flex;
-    margin-right: 30px;
-    justify-items: right;
+.h2-content {
+  padding: 30px 20px;
+}
+
+.main_content_left,
+p {
+  padding: 0 40px;
+}
+
+.main_content_left .image {
+  width: 500px;
+  margin-left: 400px;
+  padding: 0px 40px;
+}
+
+.main_content_right {
+  display: flex;
+  padding: 30px 30px;
+}
+
+.content-h2 {
+  display: flex;
+  padding: 30px 20px;
+}
+
+.h2-left {
+  margin-left: 220px;
+}
+
+.h2-right {
+  margin-right: 200px;
 }
