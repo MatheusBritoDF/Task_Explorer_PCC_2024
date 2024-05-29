@@ -1,4 +1,4 @@
-<form method="POST">
+<form action="recuperar_senha.php" method="POST">
     <link rel="stylesheet" href="css/style-rec1.css">
     <div class="container">
     <div class="box">
