@@ -10,6 +10,8 @@ include 'conexao.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/painel.css">
     <link rel="icon" href="img/task.png">
     <title>Novo Quadro</title>
 </head>
@@ -21,12 +23,12 @@ include 'conexao.php';
             <input type="hidden" name="" value="">
 
             <h2>Título</h2>
-            <p>
+            <p class="insert-title">
                 <input type="text" name="titulo" placeholder="Insira um título" autofocus required>
             </p>
             
             <h2>Visibilidade</h2>
-                <select name="" id="">Visibilidade
+                <select name="" id="" class="select-box">
                     <option value="desktop">Área de Trabalho</option>
                     <option value="public">Público</option>
                     <option value="private">Privado</option>
@@ -55,7 +57,7 @@ include 'conexao.php';
                 <img src="https://images.unsplash.com/photo-1714833890840-a3c4f446c194?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OHx8fGVufDB8fHx8fA%3D%3D" alt="">
             </div>
 
-            <div class="">
+            <div class="btn">
                 <a class="" href="">Criar Quadro</a>
             </div>
         </form>
