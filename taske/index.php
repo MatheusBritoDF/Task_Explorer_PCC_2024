@@ -15,7 +15,7 @@ session_start();
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style1.css" />
     <link rel="icon" href="img/task.png">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Login</title>
@@ -60,7 +60,7 @@ session_start();
           <script src="../taske (1).13/recaptcha/script.js"></script>
 
           <?php
-          include '../taske (1).13/recaptcha/recaptcha.php';
+          include 'recaptcha/script.js';
           ?>
 
           <div>
