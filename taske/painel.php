@@ -40,7 +40,7 @@ include ("verifica_login.php");
             </li>
             <li>
                 <div class="iocn-links">
-                    <a href="#">
+                    <a class="link_as_button" href="precos.html">
                         <i class='bx bx-collection'></i>
                         <!--Logo do inicio-->
                         <span class="link_name">Preços</span>
@@ -49,9 +49,9 @@ include ("verifica_login.php");
                 </div>
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">Planos</a></li>
-                    <li><a href="precos.html">Gratuito</a></li>
-                    <li><a href="precos.html">Pro</a></li>
-                    <li><a href="precos.html">Empresa</a></li>
+                    <li><a href="#">Gratuito</a></li>
+                    <li><a href="#">Pro</a></li>
+                    <li><a href="#">Empresa</a></li>
                 </ul>
             </li>
             <li>
