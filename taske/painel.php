@@ -24,6 +24,7 @@ include ("verifica_login.php");
     <!-- Sidebar -->
     <div class="sidebar">
         <div class="logo-details">
+            <img src="img/taske2-andre-lindo.png" alt="">
             <span class="logo_name">Task Explorer</span>
         </div>
         <ul class="nav-links">
