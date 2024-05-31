@@ -12,6 +12,11 @@
     height: 100%;
     width: 260px;
     background: #373a37;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+.sidebar.close{ /*Foi feito aqui a alteração*/
+    width: 78px;
 }
 .sidebar .logo-details{
     height: 60px;
@@ -26,17 +31,29 @@
     min-width: 78px;
     text-align: center;
     line-height: 50px;
+    cursor: pointer; /*Feita alteração*/
 }
 .sidebar .logo-details .logo_name{
     font-size: 22px;
     color: #6ee47e;
     font-weight: 600;
-    margin-left: 40px;
+    /* margin-left: 40px; */
+    transition: 0.3s ease; /*Feita alteração*/
+    transition-delay: 0.1s;
+}
+.sidebar.close .logo-details .logo_name{ /*Feita a alteração*/
+    transition-delay: 0s;
+    opacity: 0;
+    pointer-events: none;
 }
 .sidebar .nav-links{
     height: 100%;
     padding: 30px 0 150px 0;
     overflow: auto;
+}
+.sidebar.close .nav-links{
+    overflow: visible;
+
 }
 .sidebar .nav-links::-webkit-scrollbar{
     display: none;
@@ -54,6 +71,9 @@
     align-items: center;
     justify-content: space-between;
 }
+.sidebar.close .nav-links li .iocn-links{
+    display: block;
+}
 .sidebar .nav-links li i{
     height: 50px;
     min-width: 78px;
@@ -61,10 +81,15 @@
     line-height: 50px;
     color: #fff;
     font-size: 20px;
+    cursor: pointer; /*alteração*/
     transition: all 0.3s ease;
 }
 .sidebar .nav-links li.showMenu i.arrow{
     transform: rotate(-180deg);
+}
+.sidebar.close .nav-links i.arrow{ /*alteração*/
+    display: none;
+
 }
 .sidebar .nav-links li a{
     display: flex;
@@ -75,6 +100,11 @@
     font-size: 18px;
     font-weight: 400;
     color: #fff;
+}
+.sidebar.close .nav-links li a .link_name{ /*alterações*/
+    opacity: 0;
+    pointer-events: none;
+
 }
 .sidebar .nav-links li .sub-menu{
     padding: 6px 6px 14px 80px;
@@ -103,16 +133,21 @@
     margin-top: 0;
     padding: 10px 20px;
     border-radius: 0 6px 5px 0;
-    transition: all 0.4s ease;
     opacity: 0;
+    display: block;
     pointer-events: none;
+    transition: 0s;
 }
 .sidebar .nav-links li:hover .sub-menu{
     top: 0px;
     opacity: 1;
     pointer-events: auto;
+    transition: all 0.4s ease;
 }
 .sidebar .nav-links li .sub-menu .link_name{
+    display: none;
+}
+.sidebar.close .nav-links li .sub-menu .link_name{
     display: none;
 }
 .sidebar.close .nav-links li .sub-menu .link_name{
@@ -124,6 +159,9 @@
     opacity: 1;
     pointer-events: auto;
     padding: 3px 20px 6px 16px;
+    opacity: 0; /*alterado*/
+    pointer-events: none;
+    
 }
 .sidebar .nav-links li:hover .sub-menu.blank{
     top: 50%;
@@ -133,11 +171,19 @@
 .sidebar .profile-details{
     position: fixed;
     bottom: 0;
+    width: 260px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #1d1b31;
     padding: 6px 0;
+    transition: all 0.5s ease;
+}
+.sidebar.close .profile-details{
+    background: none;
+}
+.sidebar.close .profile-details{
+    width: 78px;
 }
 .sidebar .profile-details .profile-content{
     display: flex;
@@ -150,6 +196,9 @@
     border-radius: 16px;
     margin: 0 14px 0 12px;
     background: #1d1b31;
+    transition: all 0.5s ease;
+}
+.sidebar.close .profile-details img{
     padding: 10px;
 }
 .sidebar .profile-details .profile-name,
@@ -157,6 +206,12 @@
     color: #fff;
     font-size: 18px;
     font-weight: 500;
+    white-space: nowrap;
+}
+.sidebar.close .profile-details i,
+.sidebar.close .profile-details .profile-name,
+.sidebar.close .profile-details .job{
+    display: none;
 }
 .sidebar .profile-details .job{
     font-size: 12px;
@@ -197,6 +252,7 @@
 }
 .home-section .home-content .bx-menu{
     margin: 0 15px;
+    cursor: pointer;
 }
 .home-section .home-content .text{
     font-size: 26px;
