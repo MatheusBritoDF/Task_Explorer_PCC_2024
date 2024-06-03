@@ -57,11 +57,9 @@ session_start();
 
           <a href="painel.php"></a><input type="submit" value="Login" class="btn solid" onclick="return valida()" /></a>
 
-          <script src="../taske (1).13/recaptcha/script.js"></script>
+          <script src="recaptcha/script.js"></script>
 
-          <?php
-          include 'recaptcha/script.js';
-          ?>
+      
 
           <div>
             <a href="recuperar.php" method="post" type="submit" class="rec">Esqueceu a senha?</a>
