@@ -102,9 +102,50 @@ h2 {
     font-size: 1.2em;
     color: #fff;
     background-color: #0ba70b;
-    padding: 10px;
+    padding: 10px 10px;
     border-radius: 5px;
     cursor: pointer;
     border-color: #088508;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+
+.btn-voltar{
+    width: 10%;
+    font-size: 1.2em;
+    background-color: #0ba70b;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-voltar a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-novo{
+    width: 12%;
+    height: 10%;
+    font-size: 1.2em;
+    background-color: #0ba70b;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-top: 32px;
+}
+
+.btn-novo a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
