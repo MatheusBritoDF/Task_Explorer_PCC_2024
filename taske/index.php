@@ -153,7 +153,7 @@ session_start();
             Faça seu cadastro e inicie seu gerenciamento de tarefas!
           </p>
           <button class="btn transparent" id="sign-up-btn">
-            Cadastra-se
+            Cadastre-se
           </button>
         </div>
         <a href="homepage.html"><img src="img/task.png" class="image" alt="" /></a>
