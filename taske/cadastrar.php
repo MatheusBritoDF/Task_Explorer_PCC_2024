@@ -29,7 +29,7 @@ $stmt = $conexao->prepare($query);
 $stmt->bindValue(':nome', $_POST['nome'], PDO::PARAM_STR);
 $stmt->bindValue(':email', $_POST['email'], PDO::PARAM_STR);
 $stmt->bindValue(':senha', $_POST['senha'], PDO::PARAM_STR);
-$stmt->bindValue(':tipo_usuario', 'Usuário Comum');
+$stmt->bindValue(':tipo_usuario', 'Usuário');
 
 if ($stmt->execute()) {
     $_SESSION['status_cadastro'] = true;
