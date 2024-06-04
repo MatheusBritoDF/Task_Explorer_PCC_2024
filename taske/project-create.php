@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="css/painel.css">
+    <link rel="stylesheet" href="css/painel1.css">
     <link rel="icon" href="img/task.png">
     <title>Novo Quadro</title>
 </head>
@@ -42,6 +42,9 @@
 
             <div class="btn">
                <button>Criar Quadro</button>
+            </div><br>
+            <div class="btn-voltar">
+                <a href="painel.php">Voltar</a>
             </div>
         </form>
     </div>
