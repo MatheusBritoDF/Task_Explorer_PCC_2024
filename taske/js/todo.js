@@ -74,8 +74,9 @@ form.addEventListener("submit", (e) => {
 
     // Adicionar evento de clique para excluir a tarefa
     button.addEventListener("click", function(){
-        alert("Deseja excluir esta tarefa?");
+        if(confirm("Deseja excluir esta tarefa?") === true){
         newTask.remove();
+        }
     });
 
     newTask.appendChild(editar);
