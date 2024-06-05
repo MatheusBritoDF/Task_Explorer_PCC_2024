@@ -135,13 +135,10 @@ include ("verifica_login.php");
             </li>
             <li>
                 <div class="profile-details">
-                    <div class="profile-content">
-                        <img src="image/bg_main_home.png" alt="home">
-                    </div>
+                    <div class="nome">
+                        <?php if (!isset($_SESSION['usuario'])) { header("Location: login.php"); exit(); }
+                     echo "Bem-vindo(a), " . $_SESSION['usuario']['nome'] . "!" ; ?>
 
-                    <div class="name-job">
-                        <div class="profile-name">Nome usuário</div>
-                        <div class="job">Web Desginer</div>
                     </div>
                     <a href="index.html"><i class='bx bx-log-out'></i></a>
                 </div>
@@ -193,7 +190,7 @@ include ("verifica_login.php");
                                 alt="" draggable="false">
                         </a>
                     </article>
-                    
+
                     <article class="btn-novo">
                         <a href="project-create.php" class="novo_projeto">Novo Quadro</a>
                     </article>
@@ -207,21 +204,20 @@ include ("verifica_login.php");
 
         <!-- JavaScript -->
         <script>
-            let arrow = document.querySelectorAll(".arrow");
-            for (var i = 0; i < arrow.length; i++) {
-                arrow[i].addEventListener("click", (e) => {
-                    let arrowParent = e.target.parentElement.parentElement;
-                    arrowParent.classList.toggle("showMenu");
-                });
-            }
-
-            let sidebar = document.querySelector(".sidebar");
-            let sidebar8tn = document.querySelector(".bx-menu");
-            console.log(sidebar8tn);
-            sidebar8tn.addEventListener("click", () => {
-                sidebar.classList.toggle("close");
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;
+                arrowParent.classList.toggle("showMenu");
             });
+        }
 
+        let sidebar = document.querySelector(".sidebar");
+        let sidebar8tn = document.querySelector(".bx-menu");
+        console.log(sidebar8tn);
+        sidebar8tn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
         </script>
 
 </body>
