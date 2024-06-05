@@ -8,95 +8,48 @@ form.addEventListener("submit", (e) => {
 
   if (!value) return;
 
+  // Criar um objeto FormData para enviar os dados do formulário
+  const formData = new FormData();
+  formData.append('titulo', value);
+
+  // Criar uma requisição AJAX
+  const xhr = new XMLHttpRequest();
+
+  // Configurar a função de retorno de chamada
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        // Se a requisição for bem-sucedida, você pode executar alguma ação, se necessário
+        console.log(xhr.responseText);
+      } else {
+        // Lidar com erros, se houver
+        console.error('Erro ao salvar a tarefa: ' + xhr.status);
+      }
+    }
+  };
+
+  // Abrir a conexão AJAX
+  xhr.open("POST", "salvar_tarefas.php", true);
+
+  // Enviar a requisição AJAX com os dados do formulário
+  xhr.send(formData);
+
+  
+  // Código para adicionar a tarefa à interface do usuário
   const newTask = document.createElement("p");
   newTask.classList.add("task");
   newTask.setAttribute("draggable", "true");
 
-  newTask.addEventListener("click", function () {
-    // Redirecionar para a página PHP desejada
-    window.location.href = "tarefa_create.php";
-  });
-
-  const taskText = document.createElement("span"); // Criar um elemento <span>
+  const taskText = document.createElement("span");
   taskText.innerText = value;
   newTask.appendChild(taskText);
 
-  const editar = document.createElement("button");
-  editar.classList.add("editar");
-  editar.innerText = "editar";
-  editar.style.display = "none"; // Inicialmente, ocultar o botão
-
-  // Adicionar evento de mouseover para mostrar o botão de editar
-  newTask.addEventListener("mouseover", function () {
-    editar.style.display = "block";
-  });
-
-  // Adicionar evento de mouseout para ocultar o botão de editar
-  newTask.addEventListener("mouseout", function () {
-    editar.style.display = "none";
-  });
-
-  // Adicionar evento de clique para tornar o texto editável quando o botão de editar for clicado
-  editar.addEventListener("click", function () {
-    taskText.contentEditable = true; // Tornar apenas o texto editável
-    taskText.focus(); // Focar no texto para facilitar a edição
-  });
-
-  // Adicionar evento de clique para tornar o texto editável quando o botão de editar for clicado
-  editar.addEventListener("click", function () {
-    taskText.contentEditable = true; // Tornar apenas o texto editável
-    // Focar no texto para facilitar a edição
-
-    // Adicionar ouvinte de evento para desativar a edição quando clicar fora do elemento ou pressionar "Enter"
-    const endEdit = function (event) {
-      if (
-        (event.type === "click" && !newTask.contains(event.target)) ||
-        (event.type === "keydown" && event.key === "Enter")
-      ) {
-        taskText.contentEditable = false;
-        document.removeEventListener("click", endEdit);
-        document.removeEventListener("keydown", endEdit);
-      }
-    };
-
-    document.addEventListener("click", endEdit);
-    document.addEventListener("keydown", endEdit);
-  });
-
-  const button = document.createElement("button");
-  button.classList.add("excluir");
-  button.innerText = "X";
-  button.style.display = "none"; // Inicialmente, ocultar o botão
-
-  // Adicionar evento de mouseover para mostrar o botão de exclusão
-  newTask.addEventListener("mouseover", function () {
-    button.style.display = "block";
-  });
-
-  // Adicionar evento de mouseout para ocultar o botão de exclusão
-  newTask.addEventListener("mouseout", function () {
-    button.style.display = "none";
-  });
-
-  // Adicionar evento de clique para excluir a tarefa
-  button.addEventListener("click", function () {
-    if (confirm("Deseja excluir esta tarefa?") === true) {
-      newTask.remove();
-    }
-  });
-
-  newTask.appendChild(editar);
-  newTask.appendChild(button);
-
-  newTask.addEventListener("dragstart", () => {
-    newTask.classList.add("is-dragging");
-  });
-
-  newTask.addEventListener("dragend", () => {
-    newTask.classList.remove("is-dragging");
-  });
+  // Código para adicionar botões de editar e excluir
+  // ...
 
   todoLane.appendChild(newTask);
 
   input.value = "";
 });
+
+
