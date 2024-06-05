@@ -1,5 +1,4 @@
 <?php
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -31,15 +30,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt->bindParam(':titulo', $titulo);
 
         if ($stmt->execute()) {
-            // Se a inserção for bem-sucedida, retornar uma mensagem de sucesso
-            echo "Tarefa salva com sucesso!";
+            // Se a inserção for bem-sucedida, retornar o ID do cartão e uma mensagem de sucesso
+            $id_cartao = $pdo->lastInsertId();
+            echo json_encode(['message' => 'Tarefa salva com sucesso!', 'id_cartao' => $id_cartao]);
         } else {
             // Se ocorrer um erro, retornar uma mensagem de erro
-            echo "Erro ao salvar a tarefa.";
+            echo json_encode(['message' => 'Erro ao salvar a tarefa.']);
         }
     } catch (PDOException $e) {
         // Se ocorrer um erro ao executar a consulta, exibir uma mensagem de erro
-        echo "Erro ao executar a consulta: " . $e->getMessage();
+        echo json_encode(['message' => 'Erro ao executar a consulta: ' . $e->getMessage()]);
     }
 }
 
