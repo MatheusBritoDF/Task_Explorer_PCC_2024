@@ -143,9 +143,7 @@ h2 {
     text-decoration: none;
 }
 
-
-
-
-
-
-
+.background_image input[type="radio"]{
+    /* visibility: hidden; */
+    border-color: #088508;
+}
