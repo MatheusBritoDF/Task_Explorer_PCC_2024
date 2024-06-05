@@ -23,16 +23,16 @@
 
         <div class="lanes">
 
-            <div class="swim-lane" id="todo-lane">
+            <div class="swim-lane" id="todo-lane" data-id-lista="1">
                 <h3 class="heading">A Fazer</h3>
             </div>
 
-            <div class="swim-lane" >
+            <div class="swim-lane" data-id-lista="2" >
                 <h3 class="heading">Fazendo</h3>
 
             </div>
 
-            <div class="swim-lane" >
+            <div class="swim-lane" data-id-lista="3" >
                 <h3 class="heading">Concluído</h3>
 
             </div>
