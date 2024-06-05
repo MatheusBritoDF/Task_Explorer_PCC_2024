@@ -1,4 +1,4 @@
-<?php
+<input?php
 
 ?>
 
@@ -17,7 +17,7 @@
     
     <h1>Criar Quadro</h1>
     <div class="container">
-        <form action="project-save.php" method="post" enctype="multipart/form-data">
+        <form action="project-show.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="id_usuario" value="1">
 
             <h2>Título</h2>
@@ -35,9 +35,14 @@
             
             <div class="background_image">
                 <h2>Imagem de Fundo</h2>
-                <img src="https://images.unsplash.com/photo-1714383524948-ebc87c14c0f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                <img src="https://images.unsplash.com/photo-1714591755376-349fd01b41cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                <img src="https://images.unsplash.com/photo-1714833890840-a3c4f446c194?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <input type="radio" name="tela_fundo" value="" id="" checked>
+                <img src="https://images.unsplash.com/photo-1714383524948-ebc87c14c0f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NHx8fGVufDB8fHx8fA%3D%3D" alt="" draggable="false"></input>
+
+                <input type="radio" name="tela_fundo" value="" id="">
+                <img src="https://images.unsplash.com/photo-1714591755376-349fd01b41cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D" alt="" draggable="false"></input>
+
+                <input type="radio" name="tela_fundo" value="" id="">
+                <img src="https://images.unsplash.com/photo-1714833890840-a3c4f446c194?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OHx8fGVufDB8fHx8fA%3D%3D" alt="" draggable="false"></input>
             </div>
 
             <div class="btn">
