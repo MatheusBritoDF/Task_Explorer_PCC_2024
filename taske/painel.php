@@ -140,7 +140,7 @@ include ("verifica_login.php");
                      echo "Bem-vindo(a), " . $_SESSION['usuario']['nome'] . "!" ; ?>
 
                     </div>
-                    <a href="index.html"><i class='bx bx-log-out'></i></a>
+                    <a href="logout.php"><i class='bx bx-log-out'></i></a>
                 </div>
             </li>
         </ul>
