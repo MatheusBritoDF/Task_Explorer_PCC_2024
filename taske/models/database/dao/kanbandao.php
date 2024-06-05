@@ -65,9 +65,9 @@ class KanbanDAO
     ): int|false {
         $query = 'UPDATE kanban SET
             titulo            = :titulo,
-            visibilidade           = :visibilidade,
-            id_usuario     = :id_usuario,
-            tela_fundo   = :tela_fundo
+            visibilidade      = :visibilidade,
+            id_usuario        = :id_usuario,
+            tela_fundo        = :tela_fundo
             WHERE id_kanban = :id_kanban;';
         $stmt = $this->conn->prepare($query);
 
