@@ -50,3 +50,7 @@ INSERT INTO `usuarios` (id_usuario, email, senha, nome, tipo_usuario) VALUES (3,
 INSERT INTO `kanban` (id_kanban, titulo, visibilidade, id_usuario, tela_fundo) VALUES (1, 'Template_01', 'Área de Trabalho', NULL, 'https://images.unsplash.com/photo-1714383524948-ebc87c14c0f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NHx8fGVufDB8fHx8fA%3D%3D');
 INSERT INTO `kanban` (id_kanban, titulo, visibilidade, id_usuario, tela_fundo) VALUES (2, 'Template_02', 'Área de Trabalho', NULL, 'https://images.unsplash.com/photo-1714591755376-349fd01b41cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D');
 INSERT INTO `kanban` (id_kanban, titulo, visibilidade, id_usuario, tela_fundo) VALUES (3, 'Template_03', 'Área de Trabalho', NULL, 'https://images.unsplash.com/photo-1714833890840-a3c4f446c194?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OHx8fGVufDB8fHx8fA%3D%3D');
+
+INSERT INTO `listas` (id_lista, titulo, id_kanban) VALUES (1, 'A fazer', '');
+INSERT INTO `listas` (id_lista, titulo, id_kanban) VALUES (1, 'Fazendo', '');
+INSERT INTO `listas` (id_lista, titulo, id_kanban) VALUES (1, 'Concluido', '');
