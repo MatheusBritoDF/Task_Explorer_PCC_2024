@@ -137,7 +137,7 @@ include ("verifica_login.php");
                 <div class="profile-details">
                     <div class="nome">
                         <?php if (!isset($_SESSION['usuario'])) { header("Location: login.php"); exit(); }
-                     echo "Bem-vindo(a), " . $_SESSION['usuario']['nome'] . "!" ; ?>
+                     echo "Bem-vindo(a), " . ucfirst( $_SESSION['usuario']['nome']) . "!" ; ?>
 
                     </div>
                     <a href="logout.php"><i class='bx bx-log-out'></i></a>
