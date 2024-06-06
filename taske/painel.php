@@ -1,5 +1,12 @@
 <?php
 include ("verifica_login.php");
+include 'models/database/database.php';
+include 'models/database/dao/kanbandao.php';
+
+$conn =  Database::getConexao();
+$kanbanDAO = new KanbanDAO($conn);
+$quadros = $kanbanDAO->getAll();
+$count = 0;
 ?>
 
 
