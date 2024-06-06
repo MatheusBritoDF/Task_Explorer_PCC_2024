@@ -1,5 +1,13 @@
-<input?php
+<?php
 
+// if ($visibilidade === '') {
+//     $ = '';
+// } elseif ($ === '') {
+//     $ = '';
+// } else {
+//     $ = '';
+//     $ = '';
+// }
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +26,8 @@
     <h1>Criar Quadro</h1>
     <div class="container">
         <form action="project-show.php" method="post" enctype="multipart/form-data">
-            <input type="hidden" name="id_usuario" value="1">
+            <input type="hidden" name="id_kanban" value="0">
+            <input type="hidden" name="visibilidade" value="<?= $visibilidade; ?>">
 
             <h2>Título</h2>
             <p class="insert-title">
