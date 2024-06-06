@@ -130,7 +130,7 @@ $count = 0;
 
                 <div class="dashboard_templates" >
                     
-                        <div class="kanban-card" data-kanban-id="100">
+                        <div class="kanban-card" data-id-kanban="100">
                             <a href="painel_tasks.php">
                                 <img class="dashboard_templates_image" src="img/christian-lue-QcJ1XCc3gJo-unsplash.jpg"
                                     alt="" draggable="false">
@@ -141,7 +141,7 @@ $count = 0;
                         </div>
                     
                     
-                        <div class="kanban-card" data-kanban-id="101">
+                        <div class="kanban-card" data-id-kanban="101">
                             <a href="project-show.php?id=<?= $id_kanban['id_kanban'] //[101] ?>">
                                 <img class="dashboard_templates_image"
                                     src="https://images.unsplash.com/photo-1714383524948-ebc87c14c0f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NHx8fGVufDB8fHx8fA%3D%3D"
@@ -153,7 +153,7 @@ $count = 0;
                         </div>
                     
 
-                        <div class="kanban-card" data-kanban-id="102">
+                        <div class="kanban-card" data-id-kanban="102">
                             <a href="project-show.php?id=<?= $id_kanban['id_kanban'] ?>">
                                 <img class="dashboard_templates_image"
                                     src="https://images.unsplash.com/photo-1714591755376-349fd01b41cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D"
@@ -165,7 +165,7 @@ $count = 0;
                         </div>
 
 
-                        <div class="kanban-card" data-kanban-id="103">
+                        <div class="kanban-card" data-id-kanban="103">
                             <a href="project-show.php?id=<?= $id_kanban['id_kanban'] ?>">
                                 <img class="dashboard_templates_image"
                                     src="https://images.unsplash.com/photo-1714833890840-a3c4f446c194?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OHx8fGVufDB8fHx8fA%3D%3D"
