@@ -81,48 +81,7 @@ include ("verifica_login.php");
                     <li><a class="link_name" href="#">Analytics</a></li>
                 </ul>
             </li>
-            <!-- <li>
-                    <a href="#">
-                        <i class='bx bx-line-chart' ></i>
-                        <span class="link_name">Chart</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                        <li><a class="link_name" href="#">Chart</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="iocn-links">
-                        <a href="#">
-                            <i class='bx bx-plug' ></i>
-                            <span class="link_name">Plugins</span>
-                        </a>
-                        <i class='bx bx-chevron-down arrow' ></i>
-                    </div>
-                    <ul class="sub-menu">
-                        <li><a class="link_name" href="#">Plugins</a></li>
-                        <li><a href="#">Ui Face</a></li>
-                        <li><a href="#">Pigments</a></li>
-                        <li><a href="#">Box Icons </a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class='bx bx-compass' ></i>
-                        <span class="link_name">Explore</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                        <li><a class="link_name" href="#">Explore</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class='bx bx-history' ></i>
-                        <span class="link_name">History</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                        <li><a class="link_name" href="#">History</a></li>
-                    </ul>
-                </li> -->
+
             <li>
                 <a href="#">
                     <i class='bx bx-cog'></i>
@@ -162,20 +121,28 @@ include ("verifica_login.php");
                     </p>
                 </header>
 
-                <div class="dashboard_templates">
-                    <article>
-                        <a href="painel_tasks.php">
-                            <img class="dashboard_templates_image" src="img/christian-lue-QcJ1XCc3gJo-unsplash.jpg"
-                                alt="" draggable="false">
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <img class="dashboard_templates_image"
-                                src="https://images.unsplash.com/photo-1714383524948-ebc87c14c0f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="" draggable="false">
-                        </a>
-                    </article>
+                <div class="dashboard_templates" >
+                    
+                        <div class="kanban-card" data-kanban-id="100">
+                            <a href="painel_tasks.php">
+                                <img class="dashboard_templates_image" src="img/christian-lue-QcJ1XCc3gJo-unsplash.jpg"
+                                    alt="" draggable="false">
+                            </a>
+                            <div>
+                                <a href="painel_tasks.php"><h3>Lorem, ipsum.</h3></a>
+                            </div>
+                        </div>
+                    
+                    
+                        <div>
+                            <a href="#">
+                                <img class="dashboard_templates_image"
+                                    src="https://images.unsplash.com/photo-1714383524948-ebc87c14c0f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="" draggable="false">
+                            </a>
+                        </div>
+                    
+                        
                     <article>
                         <a href="#">
                             <img class="dashboard_templates_image"
