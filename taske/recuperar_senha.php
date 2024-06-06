@@ -14,14 +14,15 @@ session_start();
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" href="css/style_rec1.css" />
     <link rel="icon" href="img/task.png">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <title>Login</title>
+    <title>Recuperar</title>
   </head>
   <body>
   <div class="container">
-    <div class="forms-container">
+    <div class="box">
+    <h4>Recuperar Senha</h4>
       <div class="signin-signup">
 
 <?php
@@ -42,8 +43,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         //echo "Deu certo"; 
         ?>
           <div class="notification is-success">
-    <p>Senha enviada! Verifique seu email</p>
-    <p>Clique para fazer seu login <a href="index.php">aqui</a></p>
+    <p>Senha enviada! Verifique seu email.</p>
+    <p>Clique para fazer seu login <a href="index.php">aqui!</a></p>
   </div>
     <?php
     }else{ ?>
@@ -73,6 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     */
 }
 ?>
+<a href="index.php"><img src="img/task.png" alt="task" class="image"></a> 
 
 <script src="js/app.js"></script>
 </body>
