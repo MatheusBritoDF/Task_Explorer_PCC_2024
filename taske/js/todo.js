@@ -70,7 +70,7 @@ form.addEventListener("submit", (e) => {
     };
 
     // Abrir a conexão AJAX
-    xhr.open("POST", "salvar_tarefas.php", true);
+    xhr.open("POST", "tarefa-save.php", true);
 
     // Enviar a requisição AJAX com os dados do formulário
     xhr.send(formData);
