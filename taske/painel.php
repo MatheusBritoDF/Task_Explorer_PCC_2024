@@ -129,35 +129,46 @@ include ("verifica_login.php");
                                     alt="" draggable="false">
                             </a>
                             <div>
-                                <a href="painel_tasks.php"><h3>Lorem, ipsum.</h3></a>
+                                <a href="project-show.php?id=<?= $id_kanban['id_kanban'] ?>"><h3>Lorem, ipsum.</h3></a>
                             </div>
                         </div>
                     
                     
-                        <div>
-                            <a href="#">
+                        <div class="kanban-card" data-kanban-id="101">
+                            <a href="project-show.php?id=<?= $id_kanban['id_kanban'] //[101] ?>">
                                 <img class="dashboard_templates_image"
                                     src="https://images.unsplash.com/photo-1714383524948-ebc87c14c0f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NHx8fGVufDB8fHx8fA%3D%3D"
                                     alt="" draggable="false">
                             </a>
+                            <div>
+                                <a href="project-show.php?id=<?= $id_kanban['id_kanban'] ?>"><h3>Lorem, ipsum.</h3></a>
+                            </div>
                         </div>
                     
-                        
-                    <article>
-                        <a href="#">
-                            <img class="dashboard_templates_image"
-                                src="https://images.unsplash.com/photo-1714591755376-349fd01b41cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="" draggable="false">
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <img class="dashboard_templates_image"
-                                src="https://images.unsplash.com/photo-1714833890840-a3c4f446c194?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="" draggable="false">
-                        </a>
-                    </article>
 
+                        <div class="kanban-card" data-kanban-id="102">
+                            <a href="project-show.php?id=<?= $id_kanban['id_kanban'] ?>">
+                                <img class="dashboard_templates_image"
+                                    src="https://images.unsplash.com/photo-1714591755376-349fd01b41cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="" draggable="false">
+                            </a>
+                            <div>
+                                <a href="project-show.php?id=<?= $id_kanban['id_kanban'] ?>"><h3>Lorem, ipsum.</h3></a>
+                            </div>
+                        </div>
+
+
+                        <div class="kanban-card" data-kanban-id="103">
+                            <a href="project-show.php?id=<?= $id_kanban['id_kanban'] ?>">
+                                <img class="dashboard_templates_image"
+                                    src="https://images.unsplash.com/photo-1714833890840-a3c4f446c194?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="" draggable="false">
+                            </a>
+                            <div>
+                                <a href="project-show.php?id=<?= $id_kanban['id_kanban'] ?>"><h3>Lorem, ipsum.</h3></a>
+                            </div>
+                        </div>
+ 
                     <article class="btn-novo">
                         <a href="project-create.php" class="novo_projeto">Novo Quadro</a>
                     </article>
