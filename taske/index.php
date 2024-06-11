@@ -122,6 +122,13 @@ session_start();
             <input type="password" name="senha" id="pass" placeholder="Senha" required />
           </div>
 
+          <div class="input-field">
+    <select name="tipo_usuario">
+      <option value="Usuário">Usuário Comum</option>
+      <option value="Administrador">Administrador</option>
+    </select>
+  </div>
+  
           <a href="index.php"><input type="submit" class="btn" value="Cadastrar" /></a>
           <p class="social-text">Nossas redes sociais</p>
 
@@ -172,6 +179,11 @@ session_start();
       </div>
     </div>
   </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
 
   <script src="js/app.js"></script>
 </body>
