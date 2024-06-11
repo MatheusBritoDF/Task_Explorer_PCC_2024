@@ -19,28 +19,28 @@ if (!$email) {
     exit();
 }
 
-
-$query = 'INSERT INTO `usuarios` 
-(nome, email, senha, tipo_usuario) 
-VALUES
-(:nome, :email, :senha, :tipo_usuario)';
-$stmt = $conexao->prepare($query);
-
-$stmt->bindValue(':nome', $_POST['nome'], PDO::PARAM_STR);
-$stmt->bindValue(':email', $_POST['email'], PDO::PARAM_STR);
-$stmt->bindValue(':senha', $_POST['senha'], PDO::PARAM_STR);
-$stmt->bindValue(':tipo_usuario', 'Usuário');
-
-if ($stmt->execute()) {
-    $_SESSION['status_cadastro'] = true;
-    //header('Location: painel.php');
-    echo "<script>
-    alert('Usuário cadastrado com sucesso');
-    window.location.href = 'index.php';
-    </script>";
-    exit();
-    //exit;
-} else {
-    echo $conexao->errorInfo();
-}
-
+// Verifica se os campos foram preenchidos
+if (isset($_POST['nome'], $_POST['email'], $_POST['senha'], $_POST['tipo_usuario'])) {
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $tipo_usuario = $_POST['tipo_usuario'];
+  
+    // Insere o novo usuário no banco de dados
+    $stmt = $conexao->prepare("INSERT INTO usuarios (nome, email, senha, tipo_usuario) VALUES (?, ?, ?, ?)");
+    $stmt->bindParam(1, $nome);
+    $stmt->bindParam(2, $email);
+    $stmt->bindParam(3, $senha); // Aqui não criptografa a senha
+    $stmt->bindParam(4, $tipo_usuario);
+    
+    if ($stmt->execute()) {
+      $_SESSION['status_cadastro'] = true;
+      header('Location: index.php');
+      exit();
+    } else {
+      $_SESSION['erro_cadastro'] = true;
+      header('Location: index.php');
+      exit();
+    }
+  }
+  ?>
