@@ -9,48 +9,31 @@ CREATE TABLE `usuarios` (
   `senha` VARCHAR(100) NOT NULL,
   `nome` VARCHAR(100) NOT NULL,
   `tipo_usuario` ENUM('Usuário', 'Administrador') NOT NULL,
-  PRIMARY KEY (`id_usuario`));
+  PRIMARY KEY (`id_usuario`)
+);
 
-
-CREATE TABLE `kanban` (
-  `id_kanban` INT NOT NULL AUTO_INCREMENT,
-  `titulo` VARCHAR(60) NOT NULL,
-  `visibilidade` ENUM('Área de Trabalho', 'Público', 'Privado') NOT NULL,
-  `id_usuario` INT NULL,
-  `tela_fundo` VARCHAR(255) NOT NULL,
-  PRIMARY KEY (`id_kanban`),
+CREATE TABLE `tasks` (
+  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `task_name` VARCHAR(190),
+  `task_description` VARCHAR(250),
+  `task_image` VARCHAR(50),
+  `task_date` DATE,
+  `id_usuario` INT,
   FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`)
 );
 
-
-CREATE TABLE `listas` (
-  `id_lista` INT NOT NULL AUTO_INCREMENT,
-  `titulo` VARCHAR(60) NOT NULL,
-  `id_kanban` INT NOT NULL,
-  PRIMARY KEY (`id_lista`),
-  FOREIGN KEY (`id_kanban`) REFERENCES `kanban` (`id_kanban`)
-);
-
-
-CREATE TABLE `cartoes` (
-  `id_cartao` INT NOT NULL AUTO_INCREMENT,
-  `titulo` VARCHAR(45) NOT NULL,
-  `descricao` VARCHAR(500),
-  `nivel_prioridade` ENUM('ALTA', 'MÉDIA', 'BAIXA'),
-  `id_lista` INT NOT NULL,
-  PRIMARY KEY (`id_cartao`),
-  FOREIGN KEY (`id_lista`) REFERENCES `listas` (`id_lista`)
-);
+CREATE TABLE `tbl_list` (
+    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `list` VARCHAR(255) NOT NULL,
+    `painel` INT,
+    `id_task` INT,
+    FOREIGN KEY (`id_task`) REFERENCES `tasks` (`id`)
+  );
 
 INSERT INTO `usuarios` (id_usuario, email, senha, nome, tipo_usuario) VALUES (1, 'admin@email.com', '123456', 'Admin', 'Administrador');
 INSERT INTO `usuarios` (id_usuario, email, senha, nome, tipo_usuario) VALUES (2, 'user01@email.com', '123456', 'User01', 'Usuário');
 INSERT INTO `usuarios` (id_usuario, email, senha, nome, tipo_usuario) VALUES (3, 'user02@email.com', '123456', 'User02', 'Usuário');
 
-
-INSERT INTO `kanban` (id_kanban, titulo, visibilidade, id_usuario, tela_fundo) VALUES (101, 'Template_01', 'Área de Trabalho', NULL, 'https://images.unsplash.com/photo-1714383524948-ebc87c14c0f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NHx8fGVufDB8fHx8fA%3D%3D');
-INSERT INTO `kanban` (id_kanban, titulo, visibilidade, id_usuario, tela_fundo) VALUES (102, 'Template_02', 'Área de Trabalho', NULL, 'https://images.unsplash.com/photo-1714591755376-349fd01b41cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D');
-INSERT INTO `kanban` (id_kanban, titulo, visibilidade, id_usuario, tela_fundo) VALUES (103, 'Template_03', 'Área de Trabalho', NULL, 'https://images.unsplash.com/photo-1714833890840-a3c4f446c194?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OHx8fGVufDB8fHx8fA%3D%3D');
-
-INSERT INTO `listas` (id_lista, titulo, id_kanban) VALUES (1, 'A fazer', '101');
-INSERT INTO `listas` (id_lista, titulo, id_kanban) VALUES (2, 'Fazendo', '101');
-INSERT INTO `listas` (id_lista, titulo, id_kanban) VALUES (3, 'Concluido', '101');
+INSERT INTO `tasks` (id, task_name, task_description, task_image, task_date) VALUES (1, 'Engenharia', 'Quadro Kanban sobre Engenharia', 'mohammad-alizade-62t_kKa2YlA-unsplash.jpg', '');
+INSERT INTO `tasks` (id, task_name, task_description, task_image, task_date) VALUES (2, 'Desenvolvimento de Software', 'Quadro Kanban sobre o desenvolvimento de um software de inteligência artificial (IA)', 'christian-lue-QcJ1XCc3gJo-unsplash.jpg', '');
+INSERT INTO `tasks` (id, task_name, task_description, task_image, task_date) VALUES (3, 'Medicina', 'Quadro Kanban com dados levantados do número de médicos contratados', 'bailey-zindel-NRQV-hBF10M-unsplash.jpg', '');
