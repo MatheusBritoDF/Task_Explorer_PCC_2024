@@ -11,5 +11,3 @@ Desenvolver uma sistema Web que monitore e gerencie projetos, auxiliando empresa
 
 - CRUD Módulo de Login;
 - Monitorar projetos;
-- Categorizar tarefas por nível de prioridade;
-- CRUD Atribuir tarefas e membros de equipe;
