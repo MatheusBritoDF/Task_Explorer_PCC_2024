@@ -9,5 +9,38 @@ Desenvolver uma sistema Web que monitore e gerencie projetos, auxiliando empresa
 
 ### Funcionalidades ou requisitos
 
-- CRUD Módulo de Login;
-- Monitorar projetos;
+- CRUD Módulo de Login
+- CRUD de Usuários
+- CRUD de Quadros/Kanban
+- CRUD de Tarefas
+
+## Diagramas
+
+### Diagrama de Caso de Uso Geral do sistema
+
+//
+
+### Modelo Entidade-Relacionamento (MER)
+
+//
+
+## Tecnologias e Ferramentas de desenvolvimento
+
+### Tecnologias
+
+- PHP 7.4 ou superior
+- MySQL 5.6 ou superior
+- HTML 5
+- CSS 3
+- Javascript
+- Bibliotecas Javascript (Jquery e Popper)
+- Google Fonts (Poppins)
+
+### Ferramentas de desenvolvimento
+
+- VSCode (Visual Studio Code)
+- PHPMyAdmin
+- MySQL Workbench
+- Astah
+- Git e GitHub
+- XAMPP
