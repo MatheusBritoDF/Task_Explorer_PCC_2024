@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Inicio do que foi pego no arquivo -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/precos.css" rel="stylesheet">
+    <!-- fim do que foi pego -->
+    <link href="css/boot.css" rel="stylesheet" />
+    <link href="css/style2.css" rel="stylesheet" />
+    <link href="css/fonticon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/login2.css" />
+    <link rel="stylesheet" href="css/homepage2.css">
+  </head>
+
+  <link rel="icon" href="img/task.png">
+
+  <title>Suporte</title>
+
+  <body>
+    <!--DOBRA CABEÇALHO-->
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <img src="img/task.png" alt="logo">
+            </div>
+            <ul class="lista">
+                <li><a href="funcoes.html">Funções</a></li>
+                <li id="login">
+                    <a href="painel.php">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--FIM DOBRA CABEÇALHO-->
+
+    <!-- FIM POP LOGIN -->
+
+    <!--DOBRA PALCO PRINCIPAL-->
+
+    <!--1ª DOBRA-->
+    <main>
+      
+      <!--FIM 1ª DOBRA-->
+
+      <!--INICIO SESSÃO SESSÃO DE ARTIGOS-->
+      <section class="main_blog">
+        <header class="main_blog_header">
+          <h1 class="icon-blog">Receba ajuda com o Task Explorer</h1>
+        </header>
+
+        <article>
+          <a href="#">
+            <img
+              src="img/bot-animate.svg"
+              width="200"
+              alt="Imagem post"
+              title="Imagem Post"
+            />
+          </a>
+          <p><a href="" class="category">Consulte o site de ajuda</a></p>
+          <h2>
+            <a href="" class="title"
+              >Receba respostas mais rápido! As chances de que a sua pergunta já tenha sido respondida em um dos artigos de ajuda são grandes.</a
+            >
+          </h2>
+        </article>
+
+        <article>
+          <a href="#">
+            <img
+              src="img/no-data-animate.svg"
+              width="200"
+              alt="Imagem post"
+              title="Imagem Post"
+            />
+          </a>
+          <p><a href="" class="category">O Task Explorer está fora do ar?</a></p>
+          <h2>
+            <a href="" class="title"
+              >Em raras situações, o Task Explorer vai ficar fora do ar para manutenção ou por causa de um erro inesperado. Se alguma coisa não estiver funcionando, verifique se ele não está indisponível.</a
+            >
+          </h2>
+        </article>
+
+        <article>
+          <a href="#">
+            <img
+              src="img/online-article-animate.svg"
+              width="200"
+              alt="Imagem post"
+              title="Imagem Post"
+            />
+          </a>
+          <p><a href="" class="category">Obter suporte</a></p>
+          <h2>
+            <a href="" class="title">Precisamos de algumas informações para oferecer a você a melhor solução. Entre em contato por telefone, bate-papo, e-mail e muito mais</a>
+          </h2>
+        </article>
+
+
+      <!--FIM SESSÃO SESSÃO DE ARTIGOS-->
+
+
+    <div class="rodape">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+          <div class="row">
+            <div class="col-12 col-md">
+              <img class="mb-2" src="img/task.png" alt="" width="24" height="24" draggable= false>
+              <small class="d-block mb-3 text-muted">&copy; 2023-2024</small>
+            </div>
+            <div class="col-6 col-md">
+              <h5 id="funcoes">Funções</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Quadros, listas e cartões</a></li>
+                <li><a class="text-muted" href="#">Permissões</a></li>
+                <li><a class="text-muted" href="#">Configure projetos</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5 id="suporte">Suporte</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Central de Atendimento</a></li>
+                <li><a class="text-muted" href="#">Perguntas Frequentes</a></li>
+                <li><a class="text-muted" href="#">Contatos</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5 id="sobre">Sobre</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Time</a></li>
+                <li><a class="text-muted" href="#">Privacidade</a></li>
+                <li><a class="text-muted" href="#">Termos</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <!-- Redes sociais -->
+        
+        <!-- FIm redes sociais -->
+
+        <!-- endereço -->
+
+    
+
+        <!-- fim endereço -->
+    </div>
+  </body>
+  <script>
+    // Seleciona o link e a janela modal
+    var link = document.querySelector(".modal-link");
+    var modal = document.querySelector(".modal");
+    var overlay = document.querySelector(".overlay");
+
+    // Adiciona um listener de evento para o link
+    link.addEventListener("click", function (event) {
+      event.preventDefault(); // previne o comportamento padrão do link (navegar para outra página)
+
+      overlay.style.display = "block"; // exibe a camada escura
+      modal.style.display = "block"; // exibe a janela modal
+    });
+
+    // Adiciona um listener de evento para a camada escura
+    overlay.addEventListener("click", function () {
+      overlay.style.display = "none"; // oculta a camada escura
+      modal.style.display = "none"; // oculta a janela modal
+    });
+  </script>
+</html>
