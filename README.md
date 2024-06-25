@@ -34,7 +34,7 @@ Desenvolver uma sistema Web que monitore e gerencie projetos, auxiliando empresa
 - CSS 3
 - Javascript
 - Bibliotecas Javascript (Jquery e Popper)
-- Google Fonts (Poppins)
+- Google Fonts (Poppins, Nunito e Open Sans)
 
 ### Ferramentas de desenvolvimento
 
