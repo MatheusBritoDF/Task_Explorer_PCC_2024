@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  background: #21244a;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-left: 440px;
+  background: linear-gradient(to left, #4e9e52, #043016);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-size: 50px;
+}
+
+.h2 {
+  background: linear-gradient(to left, #4e9e52, #043016);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-left: 230px;
+}
+
+.form {
+  margin-left: 230px;
+  display: flex;
+  background: #02783300;
+}
+
+.form input {
+  height: 30px;
+  background: #21244a;
+  color: #ccc;
+  border-radius: 3px;
+  border: 2px solid #ccc;
+  width: 150px;
+}
+
+.form label {
+  color: #000000;
+  background: #02783300;
+}
+
+.listagem {
+  background: linear-gradient(to left, #4e9e52, #043016);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-left: 230px;
+}
+
+.container {
+  margin-left: 210px;
+  max-width: 1500px;
+  border-radius: 10px;
+}
+
+.container .box tr {
+  text-align: center;
+}
+
+.container .box tr th {
+  background: linear-gradient(to left, #eaeaea, #027833);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight: 1000;
+  font-size: 20px;
+}
+
+.registros td {
+  color: #ccc;
+  text-align: center;
+  left: 50px;
+}
+
+.btn {
+  background: #027833;
+  border-radius: 4px;
+  width: 80px;
+  height: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid #ccc;
+}
+
+.btn-excluir {
+  background: #ff0000;
+  border-radius: 4px;
+  width: 80px;
+  height: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid #ccc;
+}
+
+.btn-ad {
+  background: red;
+  border-radius: 4px;
+  width: 80px;
+  height: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  margin-left: 15px;
+  margin-bottom: 50%;
+}
+
+.registros form input {
+  color: #ccc;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  height: 30px;
+  width: 100px;
+}

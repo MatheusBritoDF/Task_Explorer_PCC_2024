@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #140b30;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(#9bde9b,#ccc);
+  height: 1400px;
+  /*background-image: url(../img/espaço.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;*/
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+.container {
+  background:#140b30;
+  max-width: 800px;
+  border-radius: 10px;
+  border: 3px solid #f0f0f5;
+  margin-left: 415px;
+}
+
+/*deixa a div transparente
+
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 5px;
+  border: 3px solid #fff;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+*/
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  color: #52da52;
+  background: #140b30;
+}
+
+.header h1 {
+  background: #140b30;
+}
+
+.form {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background: #140b30;
+}
+
+.form form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #140b30;
+}
+
+.form label {
+  font-weight: bold;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: #ccc;
+  background: #140b30;
+}
+
+.form input {
+  height: 32px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #190e3b;
+}
+
+.form > form input::placeholder {
+  color: #fff;
+}
+
+.data{
+  color: white;
+}
+
+.form .input .data {
+  color: #fff;
+}
+
+.form input:focus {
+  background: #301e64;
+  color: #fff;
+}
+
+.form input data {
+  margin-left: 200;
+  color: white;
+}
+
+.form button {
+  background: #7e7c7c;
+  height: 32px;
+  width: 100px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  cursor: pointer;
+
+  transition: background 0.3s;
+}
+
+.form button:hover {
+  background: #ccc;
+}
+
+.separator {
+  background: #bbb;
+  height: 1px;
+  border-radius: 1px;
+}
+
+.list-tasks {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.list-tasks ul {
+  list-style: none;
+  background: #140b30;
+  padding: 12px auto;
+}
+
+.list-tasks ul li {
+  background: #7e7c7c;
+  height: 32px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 12px 2px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.list-tasks ul li a {
+  background: #7e7c7c;
+  transition: background 0.3s;
+  color: #fff;
+  padding: 3px 13px;
+  border-radius: 10px;
+  width: 75%;
+}
+
+.list-tasks ul li a:hover {
+  background: #c9baba;
+}
+
+.btn-clear {
+  background: #1caf1c;
+  height: 32px;
+  border: none;
+  border-radius: 4px;
+  padding: 0 12px;
+  color: #fff;
+  cursor: pointer;
+  transform: background 0.3s;
+}
+
+.btn-clear:hover {
+  background: #52da52;
+}
+
+.form-button {
+  background: #140b30;
+}
+
+.btn-clear1 {
+  background: #1caf1c;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  padding: 0 12px;
+  color: #fff;
+  margin-left: auto;
+  transform: background 0.3s;
+  cursor: pointer;
+}
+
+.btn-clear1:hover {
+  background: #52da52;
+}
+
+.footer {
+  background: #e0e0e2;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.footer p {
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  background-color: #e0e0e2;
+}
+
+.container .tarefas {
+  color: #52da52;
+  text-align: center;
+}
+
+/*formatação da parte da descrição do produto*/
+
+.details-container {
+  background: #f5f3f3;
+  max-width: 900px;
+  height: 550px;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-left: 65vh;
+  margin-right: auto;
+  padding: 12px;
+  border: 7px solid #ccc;
+}
+
+.header2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  background: #f5f3f3;
+}
+
+.header2 h1 {
+  background: #f5f3f3;
+  color: black;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 12px;
+  background: #f5f3f3;
+}
+
+.details {
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 16px;
+  background: #f5f3f3;
+}
+
+.details dl {
+  background: #f5f3f3;
+}
+
+.details dl dt {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: #666;
+  background: #f5f3f3;
+}
+
+.details dl dd {
+  margin-top: 4px;
+  margin-bottom: 12px;
+  color: #999;
+  background: #f5f3f3;
+}
+
+.image {
+  max-width: 400px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding: 16px;
+  background: #f5f3f3;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.logo-voltar{
+  background: #1a0f3d;
+}
+
+.logo-voltar a{
+  background: #1a0f3d;
+}
+
+.btn-voltar {
+  background: #ef5350;
+  border: none;
+  color: #fff;
+  padding: 12px 12px;
+  border-radius: 8px;
+  margin-left: 170vh;
+  margin-top: 10px;
+  cursor: pointer;
+  transform: background 0.3s;
+}
+
+.btn-voltar:hover {
+  background: #ef9a9a;
+}
+
+.alert-success {
+  background: #c5e1a5;
+  margin: 4px;
+  padding: 12px;
+  color: #7cb342;
+}
+
+.alert-error {
+  background: #ffab91;
+  margin: 4px;
+  padding: 12px;
+  color: #f4511e;
+}
+
+/*Painel Task*/
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.board {
+  background: #e0e0e0;
+  max-width: 790px;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.menu_board {
+  background-color: black;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  opacity: 0.8;
+}
+.menu_board a {
+  font-weight: bold;
+  background-color: rgb(81, 236, 107);
+  padding: 5px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  color: black;
+}
+
+/* --- Area de adicionar tarefa --- */
+
+#todo-form {
+  padding: 32px 32px 0;
+  background: #ccc;
+}
+
+#todo-form input {
+  padding: 12px;
+  margin-right: 12px;
+  width: 225px;
+
+  border-radius: 4px;
+  border: none;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  background-color: rgb(255, 255, 255);
+
+  font-size: 14px;
+  outline: none;
+}
+
+#todo-form button {
+  padding: 12px 32px;
+
+  border-radius: 4px;
+  border: none;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  background-color: rgb(81, 236, 107);
+  color: black;
+
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* --- Cartões --- */
+
+.lanes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 16px;
+
+  padding: 24px 32px;
+
+  overflow: scroll;
+  height: 100%;
+  background: #ccc;
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.swim-lane {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  background: #f4f4f4;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+
+  padding: 12px;
+  border-radius: 4px;
+  width: 225px;
+  min-height: 40px;
+
+  flex-shrink: 0;
+}
+
+.swim-lane h3 {
+  background: #f4f4f4;
+}
+
+/*--- task são os P ---*/
+.task {
+  background-color: #ccc;
+  color: black;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  align-items: center;
+
+  padding: 12px;
+  border-radius: 4px;
+
+  font-size: 16px;
+  cursor: move;
+
+  word-break: break-all;
+  overflow: hidden;
+  min-height: 40px;
+  max-height: 500px;
+}
+
+.lanes .swim-lane p span {
+  background: #ccc;
+  font-size: 20px;
+}
+
+.excluir {
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  outline: none;
+  color: #f4f4f4;
+  cursor: pointer;
+  margin-left: 1px;
+}
+
+.editar {
+  background-color: gray;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  outline: none;
+  color: #f4f4f4;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 2px;
+}
+
+.is-dragging {
+  scale: 1.05;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
+  background: rgb(50, 50, 50);
+  color: white;
+}
+
+.box {
+  background: #ccc;
+}
+
+/* formatação do drag drop */

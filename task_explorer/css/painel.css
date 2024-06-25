@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Nunito';
+}
+
+/*CABEÇALHO*/
+
+.menu {
+    background-color: #130f0d;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    width: 90px;
+}
+
+.main_dashboard_header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dashboard_templates {
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.dashboard_templates .dashboard_templates_image {
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+/* .novo_projeto {
+    
+} */
+
+body {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+h2 {
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.insert-title input[type="text"] {
+    border-radius: 5px;
+    padding: 5px 5px;
+    border-color: #333;
+    width: 200px;
+}
+
+.select-box {
+    border-radius: 5px;
+    padding: 5px 5px;
+    background-color: #fff;
+    width: 200px;
+    cursor: pointer;
+}
+
+.background_image img {
+    width: 70px;
+    height: 50px;
+}
+
+.btn {
+    margin-top: 30px;
+}
+
+.btn button {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #0ba70b;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: #088508;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-voltar{
+    width: 10%;
+    font-size: 1.2em;
+    background-color: #0ba70b;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-voltar a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-novo{
+    width: 12%;
+    height: 10%;
+    font-size: 1.2em;
+    background-color: #0ba70b;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-top: 32px;
+}
+
+.btn-novo a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#butao_logout {
+    width: 10%;
+    font-size: 0.6em;
+    color: white;
+    background-color: rgba(224, 89, 89, 0.993);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-left: 40%;
+}
+
+.background_image input[type="radio"]{
+    /* visibility: hidden; */
+    border-color: #088508;
+}

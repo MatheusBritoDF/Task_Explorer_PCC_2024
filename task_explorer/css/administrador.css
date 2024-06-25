@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+*{
+    background: #21244a;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+h1{
+    text-align: center;
+    margin-left: 440px;
+    background: linear-gradient(to left, #eaeaea,#027833);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-size: 50px;
+}
+.h2{
+    background: linear-gradient(to left, #eaeaea,#027833);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.form input{
+    height: 25px;
+    background: #301e64;
+    color: #ccc;
+    border-radius: 3px;
+    border: 2px solid #ccc;
+}
+.form label{
+    color: #ccc;
+}
+.listagem{
+    background: linear-gradient(to left, #eaeaea,#027833);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.container .box tr{
+    text-align: center;
+}
+.container .box tr th{
+    background: linear-gradient(to left, #eaeaea,#027833);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 20px;
+}
+.registros td{
+    color: #ccc;
+    text-align: center;
+}
+.btn{
+    background:#027833;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid #ccc;
+}
+.btn-excluir{
+    background:#ff0000;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid #ccc;
+}
+.registros form input{
+    color: #ccc;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    height: 30px;
+}
+
+#butao_logout {
+    width: 10%;
+    font-size: 0.6em;
+    color: white;
+    background-color: rgba(224, 89, 89, 0.993);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-left: 40%;
+}

@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+
+.board {
+  background: #fff;
+    max-width: 790px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.menu_board {
+  background-color: black;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  opacity: 0.8;
+}
+.menu_board a {
+  font-weight: bold;
+  background-color: rgb(81, 236, 107);
+  padding: 5px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  color: black;
+}
+
+/* --- Area de adicionar tarefa --- */
+
+#todo-form {
+  padding: 32px 32px 0;
+}
+
+#todo-form input {
+  padding: 12px;
+  margin-right: 12px;
+  width: 225px;
+
+  border-radius: 4px;
+  border: none;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  background-color: rgb(255, 255, 255);
+
+  font-size: 14px;
+  outline: none;
+}
+
+#todo-form button {
+  padding: 12px 32px;
+
+  border-radius: 4px;
+  border: none;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  background-color: rgb(81, 236, 107);
+  color: black;
+
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* --- Cartões --- */
+
+.lanes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 16px;
+
+  padding: 24px 32px;
+
+  overflow: scroll;
+  height: 100%;
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.swim-lane {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  background: #f4f4f4;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+
+  padding: 12px;
+  border-radius: 4px;
+  width: 225px;
+  min-height: 40px;
+
+  flex-shrink: 0;
+}
+
+/*--- task são os P ---*/
+.task {
+  background-color: white;
+  color: black;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  align-items: center;
+
+  padding: 12px;
+  border-radius: 4px;
+
+  font-size: 16px;
+  cursor: move;
+
+  word-break: break-all;
+  overflow: hidden;
+  min-height: 40px;
+  max-height: 500px;
+}
+
+.excluir{
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+  padding:4px;
+  outline: none;
+  color:#f4f4f4;
+  cursor: pointer;
+  margin-left: 1px;
+  
+}
+
+.editar{
+  background-color: gray;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  padding:4px;
+  outline: none;
+  color:#f4f4f4;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 2px;
+  
+}
+
+.is-dragging {
+  scale: 1.05;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
+  background: rgb(50, 50, 50);
+  color: white;
+}

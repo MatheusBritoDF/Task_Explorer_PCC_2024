@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(rgb(255, 255, 255), #fafefa, #fefefe);
+  width: 100%;
+  height: 100vh;
+}
+.logo {
+  margin: 0;
+}
+
+.logo img {
+  margin-left: 50px;
+  width: 70px;
+  height: 70px;
+  padding: 0;
+}
+.menu {
+  background-color: rgba(0, 0, 0, 0.776);
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+}
+
+.lista li {
+  margin: 0px 20px 0px auto;
+  justify-items: right;
+  display: inline-block;
+  padding: 30px;
+  transition: 1s;
+}
+
+.lista li a  {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.lista li:hover {
+  opacity: 0.8;
+  color: black;
+}
+
+#login {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 1s;
+  background-color: #0ba70b;
+}
+
+#login a {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  background: none;
+}
+
+#login:hover {
+  opacity: 0.5;
+  padding: 15px;
+}
+
+.main01 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+
+.main01 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.9em;
+  color: rgb(255, 255, 255);
+  margin-left: 80px;
+  margin-right: 0;
+}
+
+.main01 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.email {
+  font-size: 15px;
+  width: 30%;
+  padding: 20px;
+  margin: 20px auto 1px 80px;
+  border-radius: 20px;
+  border: none;
+  outline: 0;
+}
+
+.send_cadastro {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #088508;
+  width: 12em;
+  padding: 20px;
+  margin: 1px auto 50px 80px;
+  border-radius: 15px;
+  border: none;
+  outline: 0;
+  transition: 0.5s;
+  box-shadow: -0px 10px 40px #06f106;
+  cursor: pointer;
+}
+
+.send_cadastro:hover {
+  padding: 20px;
+  width: 16em;
+  background-color: #0ba70b;
+  color: white;
+}
+
+.img_menu {
+  opacity: 1;
+  margin: 0 70px 30px 70px;
+  filter:drop-shadow(10px 7px 10px black)
+}
+
+@media (max-width: 800px) {
+  .lista li a {
+    font-size: 12px;
+  }
+}
