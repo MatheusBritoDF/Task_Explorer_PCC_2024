@@ -18,7 +18,7 @@ Desenvolver uma sistema Web que monitore e gerencie projetos, auxiliando empresa
 
 ### Diagrama de Caso de Uso Geral do sistema
 
-<img src="Task_Explorer_UseCase" alt="Diagrama de Caso de Uso Geral">
+![Diagrama de Caso de Uso Geral](https://imgur.com/a/zjyNPDY)
 
 ### Modelo Entidade-Relacionamento (MER)
 
