@@ -18,7 +18,7 @@ Desenvolver uma sistema Web que monitore e gerencie projetos, auxiliando empresa
 
 ### Diagrama de Caso de Uso Geral do sistema
 
-![Task_Explorer_UseCase](https://github.com/MatheusBritoDF/Task_Explorer_PCC_2024/assets/169260782/3888004d-d6ef-4242-94bc-3090db315558)
+![Task_Explorer_UseCase](https://github.com/MatheusBritoDF/Task_Explorer_PCC_2024/assets/169260782/3f782e00-9b3a-431d-a3f6-3acd50a06a77)
 
 ### Modelo Entidade-Relacionamento (MER)
 
