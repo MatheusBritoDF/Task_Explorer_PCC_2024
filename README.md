@@ -22,7 +22,7 @@ Desenvolver uma sistema Web que monitore e gerencie projetos, auxiliando empresa
 
 ### Modelo Entidade-Relacionamento (MER)
 
-//
+![mer_task_explorer](https://github.com/MatheusBritoDF/Task_Explorer_PCC_2024/assets/169260782/2946aa9d-4289-4b7e-931d-14e0ddcbbb21)
 
 ## Tecnologias e Ferramentas de desenvolvimento
 
